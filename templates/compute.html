@@ -1,0 +1,11 @@
+<!doctype html>
+<title>Mike Gagnon's hacker challenge</title>
+{% if computation %}
+    <h1>{{ computation }}</h1>
+{% endif %}
+<h1>What computation would you like to request?</h1>
+<form method="get" action="/">
+    <textarea name="compute">
+    </textarea>
+    <input type=submit value="submit"/>
+</form>
