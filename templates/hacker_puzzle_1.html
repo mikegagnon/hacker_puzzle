@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="bootstrap.css" rel="stylesheet">
+    <link href="/static/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 20px;
@@ -46,7 +46,7 @@
         margin-top: 28px;
       }
     </style>
-    <link href="bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -83,11 +83,14 @@
                 name="compute"
                 rows="1"
                 cols="50"
-                maxlength="500">{{ computation }}</textarea>
-              {{ result }}
+                maxlength="500">{{ compute }}</textarea>
+              = {{ result }}
             </h2>
           </p>
-          <a class="btn btn-large btn-success" href="#">Calculate</a>
+          <input
+            type=submit
+            value="submit"
+            class="btn btn-large btn-success" />
         </form>
       </div>
 
@@ -121,7 +124,7 @@
 
       <div class="row-fluid marketing">
         <div class="span6">
-          <h2>The Challenge</h2>
+          <h2><a name="challenge">The Challenge</a></h2>
           <p>This hacking challenge is designed for non-programmers who know how to use a web
             browser. It will be helpful if you have attended (or read) my
             <a href="http://mikegagnon.com/20_minute_hacker">20-minute Intro to Hacking</a>.</p>
@@ -131,14 +134,14 @@
            users across the Web will be unable to use this calculator application.</p>
           </p>
 
-          <h2>Hall of Fame</h2>
+          <h2><a name="hof">Hall of Fame</a></h2>
           <p>If you succeed, email me at
             <a href="mailto:mikegagnon@gmail.com">mikegagnon@gmail.com</a>, and explain how
             you DoS'ed this web application. I'll put your name here. </p>
         </div>
 
         <div class="span6">
-          <h2>Rules of Engagement</h2>
+          <h2><a name="roe">Rules of Engagement</a></h2>
           <p>
             <ol>
               <li>If you succeed in causing a denial of service, cease your attack right away.
