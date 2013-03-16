@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hacker Puzzle #1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="#challenge">The Challenge</a></li>
+          <li><a href="#roe">Rules of Engagement</a></li>
+          <li><a href="http://mikegagnon.com">Puzzle by Mike Gagnon</a></li>
+        </ul>
+        <h3 class="muted">Hacker puzzle #1</h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        <h1>Web calculator</h1>
+        <p class="lead">Read the <a href="#challenge">challenge</a> and the
+          <a href="#roe">rules of engagement</a>.
+          You have my permission to crash this web app, as long as you follow
+          the <a href="#roe">rules of engagement</a>.
+        </p>
+        <form method="get" action="/">
+          <p>
+            <h2>
+              <textarea
+                name="compute"
+                rows="1"
+                cols="50"
+                maxlength="500">{{ computation }}</textarea>
+              {{ result }}
+            </h2>
+          </p>
+          <a class="btn btn-large btn-success" href="#">Calculate</a>
+        </form>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Usage</h4>
+          <p>The calculator can perform the following operations: +, -, *, /, and ^</p>
+
+          <h4>Examples to try:</h4>
+          <p><code>2 + 3</code></p>
+          <p><code>3 / 7</code></p>
+          <p><code>2 ^ 3</code></p>
+
+        </div>
+
+        <div class="span6">
+          <h4>What does the ^ symbol mean?</h4>
+          <p>The ^ symbol performs "exponentatian." For example:</p>
+          <p><code>3 ^ 1</code> = <code>3</code></p>
+          <p><code>5 ^ 2</code> = <code>5 * 5</code> = <code>25</code></p>
+          <p><code>2 ^ 3</code> = <code>2 * 2 * 2</code> = <code>8</code></p>
+          <p><code>4 ^ 4</code> = <code>4 * 4 * 4 * 4</code> = <code>256</code></p>
+          <p>Try it out with the calculator</p>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h2>The Challenge</h2>
+          <p>This hacking challenge is designed for non-programmers who know how to use a web
+            browser. It will be helpful if you have attended (or read) my
+            <a href="http://mikegagnon.com/20_minute_hacker">20-minute Intro to Hacking</a>.</p>
+
+          <p>The goal of this challenge is to cause a <em>Denial of Service</em>. In other words,
+           your job is to temporarily crash the web application. If you are successful, then other
+           users across the Web will be unable to use this calculator application.</p>
+          </p>
+
+          <h2>Hall of Fame</h2>
+          <p>If you succeed, email me at
+            <a href="mailto:mikegagnon@gmail.com">mikegagnon@gmail.com</a>, and explain how
+            you DoS'ed this web application. I'll put your name here. </p>
+        </div>
+
+        <div class="span6">
+          <h2>Rules of Engagement</h2>
+          <p>
+            <ol>
+              <li>If you succeed in causing a denial of service, cease your attack right away.
+                Otherwise, you will prevent others from participating in the challenge.
+                Don't forget to email me at
+                <a href="mailto:mikegagnon@gmail.com">mikegagnon@gmail.com</a> so that I can put
+                your name on the <a href="#hof">Hall of Fame</a>.
+              </li>
+              <li>You may not use a high-volume DoS attack. On other words, do not simply
+                flood the server with a large amount of traffic. Such an attack would harm more
+                than just this web application. Plus it's not clever enough.
+              </li>
+              <li>You may not use "sophisticated" hacking techniques, such as remote-code execution,
+                nor may you do anything that causes persistent damage or trouble.
+                If you don't know what that means, don't worry: you'll never accidentally perform
+                a remote-code-execution attack. ;-)
+              </li>
+              <li>You may only harm this web application. Do not do anything that could harm any
+                other system.
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; Mike Gagnon 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+  </body>
+</html>
