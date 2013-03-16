@@ -1,3 +1,16 @@
+# A hacking puzzle that goes along with my "20-minute intro to Hacking" talk.
+# Can you use the web app to perform calculations that crash the web app?
+#
+# Mike Gagnon, Copyright 2013
+# 
+# Setup to run on heroku. Once the app is overloaded you must manually restart it
+# on heroku by doing something like:
+#   > heroku ps
+#   === web: `python hacker_puzzle_1.py`
+#   web.1: up 2013/03/16 09:29:00 (~ 1m ago)
+#   > heroku ps:stop web.1
+#
+
 from flask import Flask
 from flask import render_template
 from flask import request
