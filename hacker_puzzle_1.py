@@ -1,6 +1,8 @@
 # A hacking puzzle that goes along with my "20-minute intro to Hacking" talk.
 # Can you use the web app to perform calculations that crash the web app?
 #
+# Live on: http://hackerpuzzle.herokuapp.com
+#
 # Mike Gagnon, Copyright 2013
 # 
 # Setup to run on heroku. Once the app is overloaded you must manually restart it
