@@ -1,0 +1,1 @@
+web: python hacker_puzzle_1.py
