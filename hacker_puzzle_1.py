@@ -22,7 +22,7 @@ import re
 
 app = Flask(__name__)
 
-compute_re = re.compile("""(?P<x>[0-9]+)[ ]*(?P<op>[\+\-\*\/\^])[ ]*(?P<y>[0-9]+)""")
+compute_re = re.compile("""^[ ]*(?P<x>[0-9]+)[ ]*(?P<op>[\+\-\*\/\^])[ ]*(?P<y>[0-9]+)[ ]*$""")
 
 def get_result(compute):
     m = compute_re.match(compute)
